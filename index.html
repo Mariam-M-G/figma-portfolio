@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mariam M.Galal - Full Stack Developer specializing in .NET framework. Portfolio showcasing web development projects, skills, and services.">
+    <meta name="keywords" content="Full Stack Developer, .NET, Web Development, Portfolio, Mariam Galal">
+    <meta name="author" content="Mariam M.Galal">
+    <title>Mariam M.Galal - Full Stack Developer</title>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <button class="logo" onclick="scrollToSection('hero')">
+                Mariam M.Galal
+            </button>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <button onclick="scrollToSection('about')" class="nav-item">About</button>
+                <button onclick="scrollToSection('skills')" class="nav-item">Skills</button>
+                <button onclick="scrollToSection('projects')" class="nav-item">Projects</button>
+                <button onclick="scrollToSection('contact')" class="nav-item">Contact</button>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars menu-icon"></i>
+                <i class="fas fa-times close-icon"></i>
+            </button>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile">
+                <div class="nav-mobile-content">
+                    <button onclick="scrollToSection('about')" class="nav-item-mobile">About</button>
+                    <button onclick="scrollToSection('skills')" class="nav-item-mobile">Skills</button>
+                    <button onclick="scrollToSection('projects')" class="nav-item-mobile">Projects</button>
+                    <button onclick="scrollToSection('contact')" class="nav-item-mobile">Contact</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line-1">Hello, World! I'm Mariam</span>
+                        
+                            <span class="title-line-2">Full Stack Developer</span>
+                        </h1>
+                        
+                        <div class="hero-description">
+                            <h3 class="hero-subtitle">Frustrated by bugs and messy code?</h3>
+                            <p class="hero-paragraph">
+                                I'm a full-stack developer specializing in the .NET framework, and my priority is simple:
+                                <br>
+                                to deliver clean, efficient, and bug-free solutions that provide a solid, long-term foundation for your project.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="scrollToSection('projects')">
+                            View My Work
+                        </button>
+                        
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/mariam-mohamed-144b99248" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Mariam-M-G" target="_blank" rel="noopener noreferrer" class="social-link github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://wa.me/201095706419" target="_blank" rel="noopener noreferrer" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="about-content">
+                    <p class="about-intro">
+                        I'm <span class="highlight">Mariam M.Galal</span>.
+                    </p>
+                    
+                    <div class="about-text">
+                        <p>I'm a Business Information Systems graduate and full-stack developer passionate about building smart, user-friendly digital solutions. My background bridges technology and business, allowing me to create websites and applications that not only look great but also solve real problems and drive results.</p>
+                        
+                        <p>From designing intuitive interfaces to developing robust back-end systems, I handle the entire process so you can focus on growing your business. I believe in clear communication, reliable delivery, and building solutions that are scalable and future-proof.</p>
+                        
+                        <p>Let's work together to turn your ideas into powerful, efficient, and beautiful digital products your users will love.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="card-header">
+                            <h3>Front-End Developer</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="skill-list">
+                                <li class="skill-item">JAVASCRIPT</li>
+                                <li class="skill-item">HTML</li>
+                                <li class="skill-item">CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="card-header">
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="skill-list">
+                                <li class="skill-item">PYTHON</li>
+                                <li class="skill-item">PHP</li>
+                                <li class="skill-item">SQL</li>
+                                <li class="skill-item">C#</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="card-header">
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="skill-list">
+                                <li class="skill-item">Communication Skills</li>
+                                <li class="skill-item">Problem-Solving</li>
+                                <li class="skill-item">Teamwork</li>
+                                <li class="skill-item">Flexibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What I Offer</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Web Development</h4>
+                        <p>I create fast, secure, and user-friendly websites that help your business grow online.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Responsive Design</h4>
+                        <p>My responsive design ensures your website adapts perfectly to every screen size.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Creative Design</h4>
+                        <p>I craft unique, eye-catching designs that bring your brand to life.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Web Ideas</h4>
+                        <p>I transform your web ideas into innovative, ready-to-launch projects.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <h4>Support</h4>
+                        <p>I provide reliable support to keep your website running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Supermarket Management System</h3>
+                            <a href="https://github.com/Mariam-M-G/super-market-managment.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <strong>Technologies:</strong> Python, OOP principles, and a command-line interface CLI.
+                        </div>
+                        <div class="project-content">
+                            <p>Developed a command-line-based supermarket management system using Python with an object-oriented programming OOP approach. The system features a dynamic interface that allows users to manage two categories of products: standard and healthy.</p>
+                            
+                            <div class="project-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Utilization of Python classes for inheritance and encapsulation</li>
+                                    <li>Real-time data handling and dynamic user input</li>
+                                    <li>Separation of concerns based on product type (standard vs. healthy)</li>
+                                    <li>A robust menu system with options for a graceful exit</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="https://github.com/Mariam-M-G/super-market-managment.git" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Online English Learning Website</h3>
+                            <a href="https://github.com/Mariam-M-G/E_Learning-English.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <strong>Technologies:</strong> HTML, CSS, JavaScript
+                        </div>
+                        <div class="project-content">
+                            <p>Developed a fully functional multi-page website designed to help users learn English online through a user-friendly and interactive interface. The platform offers a variety of services, including grammar courses, business English, online and offline classes, and private tutoring.</p>
+                            
+                            <div class="project-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Multi-Page Design</li>
+                                    <li>Interactive Content</li>
+                                    <li>Contact & Social Integration</li>
+                                    <li>Custom Styling</li>
+                                    <li>Personal Branding</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="https://github.com/Mariam-M-G/E_Learning-English.git" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Bank Misr Loan Calculator</h3>
+                            <a href="https://github.com/Mariam-M-G/bank-masr.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <strong>Technologies:</strong> Python, Tkinter (GUI), Tkinter Messagebox
+                        </div>
+                        <div class="project-content">
+                            <p>Developed a desktop loan calculator application using Python and Tkinter, featuring an intuitive GUI for calculating annual interest, total repayment, and monthly installments for 1–7 year loan terms.</p>
+                            
+                            <div class="project-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Designed a clean and user-friendly interface for easy loan planning</li>
+                                    <li>Implemented accurate interest rate calculations based on loan term</li>
+                                    <li>Enhanced usability with error pop-ups and clear/reset functionality</li>
+                                    <li>Delivered a functional and responsive desktop tool suitable for real-world use</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="https://github.com/Mariam-M-G/bank-masr.git" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Console Calculator</h3>
+                            <a href="https://github.com/Mariam-M-G/console-calc.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <strong>Technologies:</strong> C#
+                        </div>
+                        <div class="project-content">
+                            <p>Developed a C# console application that performs basic arithmetic operations (addition, subtraction, multiplication, division) based on user input. Implemented input handling, validation for invalid operations, and error prevention for division by zero.</p>
+                            
+                            <div class="project-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Built a lightweight and efficient console-based calculator</li>
+                                    <li>Applied switch-case logic for clean and structured operation handling</li>
+                                    <li>Implemented input validation and error handling to improve usability</li>
+                                    <li>Strengthened understanding of user input processing in C#</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="https://github.com/Mariam-M-G/console-calc.git" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Student Information Program</h3>
+                            <a href="https://github.com/Mariam-M-G/student-system.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <strong>Technologies:</strong> C#
+                        </div>
+                        <div class="project-content">
+                            <p>Developed a C# console application demonstrating object-oriented programming principles by creating a Student class with properties (Name, Age, Grade) and a method to display student details.</p>
+                            
+                            <div class="project-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Applied OOP concepts such as encapsulation and object instantiation</li>
+                                    <li>Designed a reusable class structure for managing student data</li>
+                                    <li>Strengthened understanding of properties and methods in C#</li>
+                                    <li>Delivered clear, organized output for multiple objects</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="https://github.com/Mariam-M-G/student-system.git" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Number List Analyzer</h3>
+                            <a href="https://github.com/Mariam-M-G/number-list-analyzer.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <strong>Technologies:</strong> C#, LINQ
+                        </div>
+                        <div class="project-content">
+                            <p>A C# console application that allows users to input numbers into a list until they enter -1 to stop. After collecting the numbers, the program displays all the values, calculates their sum and average.</p>
+                            
+                            <div class="project-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Dynamic Input Collection: Continuously accepts numbers until -1 is entered</li>
+                                    <li>List-Based Storage: Uses List<int> to store numbers efficiently</li>
+                                    <li>Automated Calculations: Computes sum and average using LINQ methods</li>
+                                    <li>Clear Output: Displays all entered numbers in sequence for easy review</li>
+                                    <li>Error Handling: Notifies the user when no numbers are entered</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="https://github.com/Mariam-M-G/number-list-analyzer.git" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Work Together</h2>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Phone</h4>
+                            <a href="tel:+201095706419">+20 1095706419</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <a href="mailto:mariam.mgalal0852@gmail.com">mariam.mgalal0852@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Copyright @ <span class="font-semibold">Mariam M.Galal</span></p>
+                
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/mariam-mohamed-144b99248" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Mariam-M-G" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/201095706419" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
